@@ -1,9 +1,6 @@
-import React, { useEffect, useCallback } from "react";
-import { fetchMovies } from "../../store/moviesSlice.js";
 import { Movie } from "../Movie";
 
 import "./styles.scss";
-import { useInfiniteScroll } from "../../hooks/useInfiniteScroll.js";
 
 const Movies = ({ movies }) => {
   return (

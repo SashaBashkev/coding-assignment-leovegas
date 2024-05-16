@@ -21,6 +21,7 @@ const MoviesPage = () => {
       ? movies.moviesSeachList
       : movies.moviesList;
 
+  // 
   const initScroll = useInfiniteScroll(loadMovies, isLoading);
 
   useEffect(() => {

@@ -6,7 +6,7 @@ export const moviesApi = createApi({
   reducerPath: "moviesApi",
   baseQuery: fetchBaseQuery({ baseUrl: ENDPOINT }),
   endpoints: (builder) => ({
-    // I have stacked with implementing store update on this level
+    // I have stuck with implementing store updates on this level, and skipped this approach due to time consuming
     fetchMovies: builder.mutation({
       query: ({ page, searchQuery }) =>
         MOVIES_API_ENDPOINTS.searchMovies({ page, searchQuery }),
@@ -18,4 +18,5 @@ export const moviesApi = createApi({
 });
 
 export const { useFetchMoviesMutation, useFetchMovieByIdMutation } = moviesApi;
+
 
