@@ -1,0 +1,15 @@
+// constants.js
+	1.Good practice to store sensitive data in .env file.
+	2.It is better to use string templates to concatenate strings and variables values.
+
+// App.js
+	3. The component is redundant and packed with logic and functionality that can be 
+	decomposed into particular child components.
+	4. The reusable data and functions can be placed in a global store, and then be used 
+	where they are needed without being passed as properties (avoid "props drilling").
+
+// components/Movie.js
+// line 15 and 16
+	5. Function and handlers should have meaningful naming, to have a clear understanding what is their purpose.
+	6. The convention of using var is no longer efficient, it can lead to unexpected behavior 
+	and complicate the trace of bugs in the code.
