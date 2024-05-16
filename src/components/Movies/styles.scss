@@ -1,0 +1,8 @@
+.container {
+  padding-top: 100px;
+  color: #ffffff;
+  @media (max-width: 720px) {
+    padding-top: 70px;
+  }
+}
+
